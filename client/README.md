@@ -40,3 +40,23 @@ Bonus
 (1) File Upload (avatar)
 
 Language: MERN
+
+ <div className="issues">
+                <h4>Known Issues as of 01-30-2022</h4>
+                <ul>
+                    <li>Delete doesn't work client side due to a route (tested on profiles; works with Postman)</li>
+                    <li>However, when the route in question is updated, the delete function constantly loops server side</li>
+                    <li>*Fixed* Edit Profile doesn't pull in all required info from db (birthdate, location, account type)</li>
+                    <li>Profile update validations not working</li>
+                    <li>Cannot upload avatar (there is a placeholder)</li>
+                    <li>Profile birthdate (date) needs formatting</li>
+                    <li>Member profile should show forum activity</li>
+                    <li>CSS / UI / page layouts need work (goal to make site responsive)</li>
+                    <li>Log & Reg disabled server side to keep app from crashing (routing / logic issues)</li>
+                    <li>Once LogReg connected, will need to pull in user info to profile to avoid duplication of information (first name, last name, email)</li>
+                    <li>Goal to differentiate types of membership upon registration (currently on profile)</li>
+                    <li>Forum disabled server side to keep app from crashing (routing / logic issues)</li>
+                    <li>Need to complete Display Posts component with table and links to member profiles</li>
+                    <li>Need to review all links to make them RESTful</li>                    
+                </ul>
+</div>  

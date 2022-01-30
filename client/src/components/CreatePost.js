@@ -65,6 +65,7 @@ const CreatePost = (props) => {
                         }
                     </select>
                 </div>
+                <p></p>
                 <div>
                     <label>Post Title: </label>
                     {
@@ -79,6 +80,7 @@ const CreatePost = (props) => {
                         onChange={(e) => setForumPostTitle(e.target.value)}
                     />
                 </div>
+                <p></p>
                 <div>
                     <label>Post: </label>
                     {
@@ -87,14 +89,15 @@ const CreatePost = (props) => {
                             : null
                     }
                     <input
-                        type="textbox"
+                        type="text"
                         name="forumPost"
                         value={forumPost}
                         onChange={(e) => setForumPost(e.target.value)}
                     />
                 </div>
+                <p></p>
                 <div>
-                    <button type="submit">Post</button>
+                    <button type="submit" className="btn">Create Post</button>
                 </div>
             </form>
         </div>

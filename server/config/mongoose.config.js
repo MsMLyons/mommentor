@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const dbName = "mommentorDB";
 
-mongoose.connect("mongoose://localhost/" + dbName, {
+mongoose.connect("mongodb://localhost/" + dbName, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
