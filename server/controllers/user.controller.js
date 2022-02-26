@@ -51,6 +51,7 @@ module.exports = {
                                     process.env.JWT_SECRET), // used to sign/hash data in the cookie
                                     {
                                         // give configuration settings for cookie
+                                        secure: true,
                                         httpOnly: true,
                                         expires: new Date(Date.now() + 9000) 
                                     }
